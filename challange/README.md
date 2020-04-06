@@ -1,3 +1,6 @@
+# Challange week-3: day-1
+
+```javascript
 const myContacts = [
     {
         id : 1,
@@ -22,11 +25,11 @@ const myContacts = [
         gender: 'male',
     }
 ]
+```
+## create contact console with method show contact, add contact, filter contact and delete contact.
 
-//create contact console with method show contact, add contact, filter contact and delete contact.
-
-//Show contact
-
+### Show contact
+```javascript
 const showContacts = contacts => {
     for (let i = 0; i < contacts.length; i++)
     {
@@ -35,9 +38,9 @@ const showContacts = contacts => {
     }
 }
 showContacts(myContacts)
-
-//add contact
-
+```
+### add contact
+```javascript
 const addContact = 
     {
         id: 4,
@@ -49,15 +52,18 @@ const addContact =
 
 const newContacts = myContacts.push(addContact);
 console.log(myContacts);
+```
 
-// filter contacts
-
+### filter contacts
+```javascript
 const filterContact = myContacts.filter((item) => {
         return item.gender == 'female';    
 })
 console.log(filterContact);
+```
 
-//delete contact
-
+### delete contact
+```javascript
 myContacts.pop(filterContact);
 console.log(myContacts);
+```
